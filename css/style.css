@@ -14,7 +14,7 @@
     --font-size-h4: 1.5rem;
     --font-size-h5: 1.25rem;
     --font-size-h6: 1rem;
-    --font-size-p: 1rem;
+    --font-size-p: 0.9rem;
     --font-size-small: 0.875rem;
 
     /* Colores de texto */
@@ -79,6 +79,7 @@ body {
     height: 50vh;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px; /* Bordes redondeados para las imágenes del carrusel */
 }
 
 /* Estilos para el contenedor de la imagen de perfil */
@@ -112,6 +113,131 @@ body {
     width: 100%;
     padding: 0 20px;
 }
+
+/* Estilos para los contenedores de sección */
+.seccion-contenedor {
+    background: rgba(255, 255, 255, 0.9); /* Fondo claro semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+/* Estilos para la presentación personal */
+.presentacion-personal {
+    color: var(--quinary-color); /* Color oscuro para el texto */
+}
+
+.presentacion-personal h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.presentacion-personal .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.presentacion-personal p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.presentacion-personal i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    color: var(--secondary-color);
+}
+
+/* Estilos para los logos institucionales */
+.logos-institucionales {
+    color: var(--quinary-color); /* Color oscuro para el texto */
+}
+
+.logo-item {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre los logos */
+}
+
+.logo-item img {
+    max-width: 150px; /* Tamaño máximo de los logos */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo-item p {
+    font-size: 1rem;
+    margin-bottom: 0; /* Elimina el margen inferior del último párrafo */
+}
+
+/* Estilos para la botonera */
+.botonera {
+    text-align: center;
+    margin: 20px 0; /* Espacio vertical */
+}
+
+.btn-custom {
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 0 10px; /* Espacio horizontal entre botones */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background: var(--primary-color);
+}
+
+/* Estilos para la sección de habilidades */
+.habilidades-titulo {
+    color: var(--secondary-color); /* Color del título */
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre los badges */
+    margin-bottom: 20px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white; /* Color del texto */
+    text-align: center;
+}
+
+/* Colores y estilos para cada badge */
+.badge.java { background-color: #f89820; } /* Naranja */
+.badge.typescript { background-color: #007acc; } /* Azul TypeScript */
+.badge.javascript { background-color: #f7df1e; color: black; } /* Amarillo */
+.badge.html { background-color: #e34f26; } /* Rojo HTML5 */
+.badge.css { background-color: #1572b6; } /* Azul CSS */
+.badge.php { background-color: #777bb4; } /* Morado PHP */
+
+.badge.spring-boot { background-color: #6db33f; } /* Verde Spring Boot */
+.badge.angular { background-color: #dd0031; } /* Rojo Angular */
+.badge.nodejs { background-color: #43853d; } /* Verde Node.js */
+.badge.hibernate { background-color: #59666c; } /* Gris Hibernate */
+.badge.thymeleaf { background-color: #005c00; } /* Verde Thymeleaf */
+.badge.bootstrap { background-color: #563d7c; } /* Morado Bootstrap */
+
+.badge.intellij { background-color: #000000; } /* Negro IntelliJ */
+.badge.netbeans { background-color: #1c75bc; } /* Azul NetBeans */
+.badge.mysql { background-color: #00758f; } /* Azul MySQL */
+.badge.github { background-color: #181717; } /* Negro GitHub */
+.badge.vscode { background-color: #0078d7; } /* Azul Visual Studio Code */
+.badge.insomnia { background-color: #4e5d94; } /* Azul Insomnia */
+.badge.postman { background-color: #ff6c37; } /* Naranja Postman */
+.badge.trello { background-color: #0079bf; } /* Azul Trello */
 
 /* Estilos para títulos y párrafos */
 h1 {
@@ -155,95 +281,58 @@ small {
     color: var(--text-color-secondary);
 }
 
-
 /* Estilos para el footer */
 #fondopie {
-  background: var(--quinary-color);
-  width: 100%;
-  padding: 40px 0; /* Aumentamos el padding para hacer el footer más alto */
-  color: var(--tertiary-color);
-  margin-top: 50px; /* Espacio entre el contenido y el footer */
-  min-height: 200px; /* Altura mínima del footer */
-  display: flex;
-  align-items: center; /* Centra el contenido verticalmente */
-  justify-content: center; /* Centra el contenido horizontalmente */
-}
-
-/* Estilos para el footer */
-#fondopie {
-  background: var(--quinary-color);
-  width: 100%;
-  padding: 40px 0; /* Aumentamos el padding para hacer el footer más alto */
-  color: var(--tertiary-color);
-  margin-top: 50px; /* Espacio entre el contenido y el footer */
-  min-height: 200px; /* Altura mínima del footer */
-  display: flex;
-  align-items: center; /* Centra el contenido verticalmente */
-  justify-content: center; /* Centra el contenido horizontalmente */
+    background: var(--quinary-color);
+    width: 100%;
+    padding: 40px 0; /* Aumentamos el padding para hacer el footer más alto */
+    color: var(--tertiary-color);
+    margin-top: 50px; /* Espacio entre el contenido y el footer */
+    min-height: 200px; /* Altura mínima del footer */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
 }
 
 /* Contenedor de la barra de íconos sociales */
 .barrapie {
-  width: 100%;
-  max-width: var(--contenedor-ancho); /* Limita el ancho al valor definido */
-  margin: 0 auto; /* Centra el contenedor */
-  padding: 0 20px; /* Añade un poco de padding a los lados */
-}
-
-/* Estilos para el footer */
-#fondopie {
-  background: var(--quinary-color);
-  width: 100%;
-  padding: 40px 0; /* Aumentamos el padding para hacer el footer más alto */
-  color: var(--tertiary-color);
-  margin-top: 50px; /* Espacio entre el contenido y el footer */
-  min-height: 200px; /* Altura mínima del footer */
-  display: flex;
-  align-items: center; /* Centra el contenido verticalmente */
-  justify-content: center; /* Centra el contenido horizontalmente */
-}
-
-/* Contenedor de la barra de íconos sociales */
-.barrapie {
-  width: 100%;
-  max-width: var(--contenedor-ancho); /* Limita el ancho al valor definido */
-  margin: 0 auto; /* Centra el contenedor */
-  padding: 0 20px; /* Añade un poco de padding a los lados */
+    width: 100%;
+    max-width: var(--contenedor-ancho); /* Limita el ancho al valor definido */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 20px; /* Añade un poco de padding a los lados */
 }
 
 /* Estilos para la barra de íconos sociales */
 .social {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between; /* Distribuye los íconos uniformemente */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Distribuye los íconos uniformemente */
 }
 
 .social li {
-  flex: 1; /* Hace que cada ícono ocupe el mismo espacio */
-  text-align: center; /* Centra los íconos dentro de su espacio */
+    flex: 1; /* Hace que cada ícono ocupe el mismo espacio */
+    text-align: center; /* Centra los íconos dentro de su espacio */
 }
 
 .social i {
-  font-size: 28px; /* Tamaño de los íconos */
-  color: var(--tertiary-color);
-  transition: color 0.3s ease; /* Efecto de transición al pasar el mouse */
+    font-size: 28px; /* Tamaño de los íconos */
+    color: var(--tertiary-color);
+    transition: color 0.3s ease; /* Efecto de transición al pasar el mouse */
 }
 
 .social i:hover {
-  color: var(--secondary-color); /* Cambia el color al pasar el mouse */
+    color: var(--secondary-color); /* Cambia el color al pasar el mouse */
 }
 
 /* Estilos para el texto de derechos reservados */
 small {
-  display: block;
-  margin-top: 20px; /* Espacio entre los íconos y el texto */
-  font-size: var(--font-size-small);
-  text-align: center; /* Centra el texto */
+    display: block;
+    margin-top: 20px; /* Espacio entre los íconos y el texto */
+    font-size: var(--font-size-small);
+    text-align: center; /* Centra el texto */
 }
-
-
 
 #instruccion, #experiencia, #skills, #contacto {
     margin-top: 100px;

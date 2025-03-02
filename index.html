@@ -28,13 +28,19 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#instruccion">Instrucción</a>
+						<a class="nav-link" href="#acerca">Acerca de</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#experiencia">Experiencia</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" href="#educacion">Educación</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link" href="#skills">Habilidades</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#cursos">Cursos</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#contacto">Contacto</a>
@@ -46,385 +52,396 @@
 
 	<!-- Contenedor principal para el contenido -->
 	<div class="contenedor-principal">
-		<!-- Carrusel -->
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-			<!-- Indicadores del carrusel -->
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-					aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-					aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-					aria-label="Slide 3"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-					aria-label="Slide 4"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-					aria-label="Slide 5"></button>
-			</div>
-
-			<!-- Contenido del carrusel (imágenes) -->
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="img/slider/slider1.png" class="d-block w-100" alt="Slide 1">
+		<!-- Carrusel dentro de un contenedor claro y redondeado -->
+		<div class="seccion-contenedor">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+				<!-- Indicadores del carrusel -->
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+						class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+						aria-label="Slide 4"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+						aria-label="Slide 5"></button>
 				</div>
-				<div class="carousel-item">
-					<img src="img/slider/slider2.jpg" class="d-block w-100" alt="Slide 2">
+
+				<!-- Contenido del carrusel (imágenes) -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/slider/slider1.png" class="d-block w-100" alt="Slide 1">
+					</div>
+					<div class="carousel-item">
+						<img src="img/slider/slider2.jpg" class="d-block w-100" alt="Slide 2">
+					</div>
+					<div class="carousel-item">
+						<img src="img/slider/slider3.jpg" class="d-block w-100" alt="Slide 3">
+					</div>
+					<div class="carousel-item">
+						<img src="img/slider/slider4.jpg" class="d-block w-100" alt="Slide 4">
+					</div>
+					<div class="carousel-item">
+						<img src="img/slider/slider5.jpg" class="d-block w-100" alt="Slide 5">
+					</div>
 				</div>
-				<div class="carousel-item">
-					<img src="img/slider/slider3.jpg" class="d-block w-100" alt="Slide 3">
-				</div>
-				<div class="carousel-item">
-					<img src="img/slider/slider4.jpg" class="d-block w-100" alt="Slide 4">
-				</div>
-				<div class="carousel-item">
-					<img src="img/slider/slider5.jpg" class="d-block w-100" alt="Slide 5">
-				</div>
-			</div>
 
-			<!-- Controles del carrusel (anterior/siguiente) -->
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
+				<!-- Controles del carrusel (anterior/siguiente) -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 
-			<!-- Título centrado sobre el carrusel -->
-			<h1 id="tituloprincipal">Porfolio Web | Sonia Pereira</h1>
+				<!-- Título centrado sobre el carrusel -->
+				<h1 id="tituloprincipal">Porfolio Web | Sonia Pereira</h1>
 
-			<!-- Imagen de perfil superpuesta -->
-			<div class="profile-container">
-				<img src="img/perfilchica.jpg" class="rounded-circle border border-4 profile-img" alt="Foto de perfil">
-			</div>
-		</div>
-
-		<!-- Contenido Principal -->
-		<div class="container-xxl mt-4">
-
-			<div class="row align-items-center">
-
-				<div class="col-sm-12 col-md-4">
-					<p class="text-light h4">Técnica Informática</p>
-					<p class="text-dark">Buenos Aires, Argentina | Información de contacto</p>
-				</div>
-				<div class="col-sm-12 col-md-4">
-					<img src="img/logoMDSchico2.png" alt="Logo MDS">
-					<img src="img/logoingUBAchico.png" alt="Logo UBA">
-					<p class="text-dark">Ministerio de Desarrollo Social de la Nación</p>
-					<p class="text-dark">Universidad de Buenos Aires | UBA</p>
+				<!-- Imagen de perfil superpuesta -->
+				<div class="profile-container">
+					<img src="img/perfilchica.jpg" class="rounded-circle border border-4 profile-img"
+						alt="Foto de perfil">
 				</div>
 			</div>
-		</div>
-
-		<!-- Botonera -->
-		<nav id="botonera" class="text-center my-4">
-			<button type="button" class="btn btn-secondary btn-sm">Tengo interés en</button>
-			<button type="button" class="btn btn-secondary btn-sm">Añadir Sección</button>
-		</nav>
-
-		<div id="contenedor1">
-			<!-- Secciones de Contenido -->
-			<div id="contenedor1" class="container-xxl">
-				<!-- Instrucción y Formación Profesional -->
-				<section id="instruccion">
-					<h3 class="p-1 mb-4 bg-secondary text-white">Instrucción y Formación Profesional</h3>
-
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-4">
-								<div class="card" style="width: 18rem;">
-									<img src="img/cards/card1.jpg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title">Formación Universitaria</h5>
-										<p><strong>Licenciatura en Sistemas</strong></p>
-										<p>Facultad de Ingeniería, Universidad de Buenos Aires</p>
-										<p>Año 1998</p>
-										<a href="#" class="btn btn-secondary btn-sm">Comentarios de Usuarios</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-4">
-								<div class="card" style="width: 18rem;">
-									<img src="img/cards/card2.jpg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title">Formación Terciaria</h5>
-										<p><strong>Analista de Sistemas</strong></p>
-										<p>Instituto Superior Mariano Moreno</p>
-										<p>Año 1995</p>
-										<a href="#" class="btn btn-secondary btn-sm">Comentarios de Usuarios</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-sm-4">
-								<div class="card" style="width: 18rem;">
-									<img src="img/cards/card3.jpg" class="card-img-top" alt="...">
-									<div class="card-body">
-										<h5 class="card-title">Formación Terciaria</h5>
-										<p><strong>Analista Programador</strong></p>
-										<p>
-										<p>Instituto Superior Mariano Moreno</p>
-										<p>Año 1994</p>
-										<a href="#" class="btn btn-secondary btn-sm">Comentarios de Usuarios</a>
-									</div>
-								</div>
-
+			<!-- Contenido Principal -->
+			<div class="container-xxl mt-4">
+				<!-- Sección de Información Personal -->
+				<div class="seccion-contenedor">
+					<div class="row align-items-center">
+						<!-- Columna de la izquierda: Información personal -->
+						<div class="col-sm-12 col-md-6 mb-4 mb-md-0">
+							<div class="presentacion-personal">
+								<p class="subtitle">Full Stack Developer - Asistente Técnico Profesional</p>
+								<p><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
+								<p><i class="fas fa-envelope"></i> sonygahan@gmail.com</p>
 							</div>
 						</div>
 
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="card" style="width: 18rem;">
-										<img src="img/cards/card4.jpg" class="card-img-top" alt="...">
-										<div class="card-body">
-											<h5 class="card-title">Formación Terciaria</h5>
-											<p><strong>Técnico Superior en Armado, Reparación de PC y Redes</strong></p>
-											<p>Instituto FUCE </p>
-											<p>Año 2002</p>
-											<a href="#" class="btn btn-secondary btn-sm">Comentarios de Usuarios</a>
-										</div>
-									</div>
+						<!-- Columna de la derecha: Logos institucionales -->
+						<div class="col-sm-12 col-md-6">
+							<div class="logos-institucionales">
+								<div class="logo-item">
+									<img src="img/senaflogo.jpg" alt="Logo MDS">
+									<p>Secretaría Nacional de Niñez, Adolescencia y Familia</p>
 								</div>
-
-								<div class="col-sm-4">
-									<div class="card" style="width: 18rem;">
-										<img src="img/cards/card5.jpg" class="card-img-top" alt="...">
-										<div class="card-body">
-											<h5 class="card-title">Formación Secundaria</h5>
-											<p><strong>Bachiller con Orientación Docente</strong></p>
-											<p>Escuela Superior Normal Nro. 10 Juan Bautista Alberdi</p>
-											<p>Año 1992</p>
-											<a href="#" class="btn btn-secondary btn-sm">Comentarios de Usuarios</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-sm-4">
-									<div class="card" style="width: 18rem;">
-										<img src="img/cards/card6.jpg" class="card-img-top" alt="...">
-										<div class="card-body">
-											<h5 class="card-title">Idiomas</h5>
-											<p><strong>Italiano</strong></p>
-											<p>Instituto Italiano di Cultura di Buenos Aires. Nivel B2, Avanzado.
-												Bilingüe.
-											</p>
-											<p>Año 2017</p>
-											<a href="#" class="btn btn-secondary btn-sm">Comentarios de Usuarios</a>
-										</div>
-									</div>
+								<div class="logo-item">
+									<img src="img/uba.jpg" alt="Logo UBA">
+									<p>Universidad de Buenos Aires | UBA</p>
 								</div>
 							</div>
-						</div>
-
-						<div class="col-sm-12">
-							<h3 class="p-1 mb-4 bg-secondary text-white">Formación Técnica Informática</h3>
-						</div>
-
-						<div class="container-xxl">
-							<div class="row">
-								<div class="col-sm-12">
-									<p><strong>Administración de Sistemas Operativos y redes:</strong>
-										Instalación y mantenimiento de redes y servicios de red (topología, cableado,
-										sistemas operativos de red). Redes Ethernet estándar y redes wireless.
-										Administración de protocolos TCP/IP, FTP, HTTP, HTTPS, SMTP, POP, TELNET, IMAP.
-										Configuración de Redes, Firewall, Routers, programación en Shell script, gestión
-										de
-										usuarios (altas, modificaciones y bajas).
-										Administración de recursos, sistemas GNU/Linux como gestores de red, integración
-										con
-										redes Windows.
-										Administración y uso de sistemas MS-Windows.
-										Servicios bajo servidores GNU/Linux. Apache, Apache2, wu-ftp, mysql.
-										Conocimientos de Seguridad Informática: realización de auditorías técnicas,
-										detección y seguimiento de procesos internos y brechas de seguridad.
-										Conocimientos de HTML, CGI, y tecnologías de Web.
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="container-xxl">
-							<div class="row">
-								<div class="col-sm-12">
-									<p><strong>Programación:</strong>
-										Programación en Visual Basic, sobre bases de datos Access, Dbase, SQL Server y
-										automatización mediante VBA (Excel y Word)
-										Conocimientos de programación en entornos web: Javascript, VBScript, PHP, ASP,
-										Perl.
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="container-xxl">
-							<div class="row">
-								<div class="col-sm-12">
-									<p><strong>Diseño Páginas Web:</strong>
-										Lenguaje HTML, Paquete Macromedia, Comercio electrónico, Promoción Web, Redes
-										Sociales.
-									</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="container-xxl">
-							<div class="row">
-								<div class="col-sm-12">
-									<p><strong>Diseño Gráfico:</strong>
-										Paquete Adobe Master Collection, programa de autoedición QuarkXPress.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12">
-							<h3 class="p-1 mb-4 bg-secondary text-white">Experiencia Laboral</h3>
-						</div>
-
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-6">
-									<div class="card" style="width: 18rem;">
-										<img src="img/cards/card7.jpg" class="card-img-top" alt="...">
-										<div class="card-body">
-											<h5 class="card-title">Ministerio de Desarrollo Social de la Nación</h5>
-											<p><strong>Técnico Informático Profesional</strong></p>
-											<p>Abril 2005 a la actualidad</p>
-											<a href="#" class="btn btn-secondary btn-sm">Comentarios de Usuarios</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-sm-6">
-									<div class="card" style="width: 18rem;">
-										<img src="img/cards/card8.jpg" class="card-img-top" alt="...">
-										<div class="card-body">
-											<h5 class="card-title">Dirección General de Educación Vial y Licencias del
-												Gobierno de la Ciudad
-											</h5>
-											<p><strong>Instructor Profesional</strong></p>
-											<p>Octubre 2002 a Octubre 2004</p>
-											<a href="#" class="btn btn-secondary btn-sm">Comentarios de Usuarios</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-6">
-									<div class="card" style="width: 18rem;">
-										<img src="img/cards/card10.jpg" class="card-img-top" alt="...">
-										<div class="card-body">
-											<h5 class="card-title">ICONTEAM diseño web</h5>
-											<p><strong>Técnico Informático</strong></p>
-											<p>Agosto 2001 a Diciembre 2003</p>
-											<a href="#" class="btn btn-secondary btn-sm">Comentarios de Usuarios</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-sm-6">
-									<div class="col-sm-6">
-										<div class="card" style="width: 18rem;">
-											<img src="img/cards/card9.jpg" class="card-img-top" alt="...">
-											<div class="card-body">
-												<h5 class="card-title">ELSERVER SRL desarrollo web y hosting</h5>
-												<p><strong>Técnico Informático</strong></p>
-												<p>Octubre 2002 a Octubre 2004</p>
-												<a href="#" class="btn btn-secondary btn-sm">Comentarios de Usuarios</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-sm-12">
-							<h3 class="p-1 mb-4 bg-secondary text-white">Cursos Dictados y Trabajo FreeLancer</h3>
-						</div>
-
-						<div class="col-sm-12">
-							<p><strong>Instalación y mantenimiento de redes a PYMES:</strong>
-								Reparación de equipos informáticos a particulares (servicio técnico a domicilio).
-								Profesora de Informática en la Asociación mutual Sociedad Italiana de Socorros Mutuos y
-								Cultural de
-								General San Martin, Buenos Aires. Enero 2003 a Septiembre del 2005.
-								Impartiendo clases a grupos de alumnos adultos mayores, mantenimiento del aula de 14
-								equipos
-								y un servidor
-								en Windows 2000.
-								Profesora particular en áreas de ofimática, programación y entornos operativos.
-								Enseñanza a
-								nivel de
-								iniciación dirigida a niños y gente sin experiencia.
-								Formación principalmente en áreas de ofimática (Ms-Office) y entornos operativos Windows
-								y
-								Unix
-								(GNU/Linux).
-								Clases de aplicaciones de Internet, Windows, ofimática, diseño de páginas Web, a
-								particulares, desde 2005.
-							</p>
-						</div>
-
-						<div class="col-sm-12">
-							<p><strong>Diseño, actualización y administración de Sitios Web:</strong>
-								SOUTHDOORS GROUP S.A.
-								Administración del portal web www.argentinaguia.com
-								Diseño y mantenimiento en servidores, correo y atención al cliente personalizada,
-								ofreciendo
-								a cada una de
-								las empresas, soporte informático en alojamiento Web y registro de dominios.
-							</p>
-						</div>
-
-						<div class="col-sm-12">
-							<h3 class="p-1 mb-4 bg-secondary text-white">Capacidades y Competencias</h3>
-						</div>
-
-						<div>
-							<div class="card mb-3" style="max-width: 540px;">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img src="img/cards/card11.jpg" class="img-fluid rounded-start" alt="...">
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<ul>
-												<li>Actitud proactiva </li>
-												<li>Versatilidad y capacidad de generar iniciativas en el ámbito
-													laboral.
-												</li>
-												<li>Habilidad para establecer relaciones sociales. Facilidad de
-													aprendizaje.
-												</li>
-												<li>Compromiso con las responsabilidades asignadas.</li>
-												<li>Capacidad para coordinar y supervisar trabajo en equipo. </li>
-												<li>Cumplimiento de los horarios establecidos. </li>
-												<li>Capacidad analítica y reflexiva ante situaciones de exigencia en el
-													ámbito laboral. </li>
-												<li>Capacidad de síntesis. Innovación y creatividad. </li>
-												<li>Sistematización de la documentación y óptima capacidad de redacción.
-												</li>
-												<li>Dominio de tecnologías de comunicación e información. </li>
-												<li>Dominio avanzado de herramientas informáticas. </li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-
 						</div>
 					</div>
+				</div>
 			</div>
 		</div>
 
+		<!-- Seccion acerca de -->
+		<div class="seccion-contenedor">
+			<div class="col-sm-12">
+				<h3 class="p-1 mb-4 bg-secondary text-white">Acerca de</h3>
+			</div>
+
+			<div class="container-xxl">
+				<div class="row">
+					<div class="col-sm-12">
+						<p> Soy Analista de Sistemas, egresada de la prestigiosa Facultad de Ingeniería de la UBA. Desde
+							2005, he desarrollado una sólida trayectoria en la Secretaría Nacional de Niñez,
+							Adolescencia y Familia, donde formo parte del equipo responsable del Monitoreo y Seguimiento
+							de Políticas Sociales.
+						</p>
+						<p> A lo largo de mi carrera, me he dedicado al ámbito administrativo, pero mi pasión por la
+							tecnología me ha llevado a enfocarme en el desarrollo de aplicaciones web. Con formación en
+							desarrollo Full Stack, busco insertarme en el mercado IT, especializándome en tecnologías
+							como Java, PHP y JavaScript, así como en frameworks como Angular y Spring Boot.
+						</p>
+						<p> Me caracterizo por mi versatilidad, empatía y constante búsqueda de conocimiento. Disfruto
+							del trabajo en equipo y de asumir nuevos desafíos con una actitud colaborativa. Mi perfil
+							profesional está respaldado por diversos proyectos documentados en mi GitHub, en los que
+							continúo trabajando activamente.
+						</p>
+
+						<p> Mi curiosidad y compromiso con el aprendizaje son los motores de mi crecimiento. Aspiro a
+							dedicarme de lleno al desarrollo de software y estoy firmemente comprometida con mi
+							evolución profesional en esta área.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Seccion de Experiencia Laboral -->
+		<div class="seccion-contenedor">
+			<div class="col-sm-12">
+				<h3 class="p-1 mb-4 bg-secondary text-white">Experiencia</h3>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="card" style="width: 18rem;">
+							<img src="img/cards/card7.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Secretaría Nacional de Niñez, Adolescencia y Familia</h5>
+								<p><strong>Técnico Informático Profesional</strong></p>
+								<p>Abril 2005 a la actualidad</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="card" style="width: 18rem;">
+							<img src="img/cards/card8.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Dirección General de Educación Vial y Licencias del
+									Gobierno de la Ciudad
+								</h5>
+								<p><strong>Instructor Profesional</strong></p>
+								<p>Octubre 2002 a Octubre 2004</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="card" style="width: 18rem;">
+							<img src="img/cards/card10.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">ICONTEAM diseño web</h5>
+								<p><strong>Técnico Informático</strong></p>
+								<p>Agosto 2001 a Diciembre 2003</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="card" style="width: 18rem;">
+							<img src="img/cards/card9.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">ELSERVER SRL desarrollo web y hosting</h5>
+								<p><strong>Técnico Informático</strong></p>
+								<p>Octubre 2002 a Octubre 2004</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Seccion de Educacion -->
+		<div class="seccion-contenedor">
+			<h3 class="p-1 mb-4 bg-secondary text-white">Educación</h3>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="card" style="width: 18rem;">
+							<img src="img/cards/card1.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Formación Universitaria</h5>
+								<p><strong>Licenciatura en Sistemas</strong></p>
+								<p>Facultad de Ingeniería, UBA</p>
+								<p>Año 1998</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="card" style="width: 18rem;">
+							<img src="img/cards/card2.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Formación Terciaria</h5>
+								<p><strong>Analista de Sistemas</strong></p>
+								<p>Instituto Superior Mariano Moreno</p>
+								<p>Año 1995</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="card" style="width: 18rem;">
+							<img src="img/cards/card3.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Formación Terciaria</h5>
+								<p><strong>Analista Programador</strong></p>
+								<p>
+								<p>Instituto Superior Mariano Moreno</p>
+								<p>Año 1994</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="card" style="width: 18rem;">
+							<img src="img/cards/card4.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Formación Terciaria</h5>
+								<p><strong>Técnico Superior en Armado, Reparación de PC y Redes</strong></p>
+								<p>Instituto FUCE </p>
+								<p>Año 2002</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="card" style="width: 18rem;">
+							<img src="img/cards/card5.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Formación Secundaria</h5>
+								<p><strong>Bachiller con Orientación Docente</strong></p>
+								<p>Escuela Superior Normal 10, JBA</p>
+								<p>Año 1992</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="card" style="width: 18rem;">
+							<img src="img/cards/card6.jpg" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">Idiomas</h5>
+								<p><strong>Italiano</strong></p>
+								<p>Instituto Italiano di Cultura di Buenos Aires. Nivel B2.
+								</p>
+								<p>Año 2017</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sección de Habilidades -->
+		<div class="seccion-contenedor">
+			<div class="col-sm-12">
+				<h3 class="p-1 mb-4 bg-secondary text-white">Tecnologías y Herramientas</h3>
+			</div>
+
+			<div class="container-xxl">
+				<!-- Lenguajes -->
+				<div class="col-sm-12">
+					<h3 class="habilidades-titulo">Lenguajes:</h3>
+					<div class="badges-container">
+						<span class="badge java">Java</span>
+						<span class="badge typescript">TypeScript</span>
+						<span class="badge javascript">JavaScript</span>
+						<span class="badge html">HTML5</span>
+						<span class="badge css">CSS</span>
+						<span class="badge php">PHP</span>
+					</div>
+				</div>
+
+				<!-- Frameworks y Librerías -->
+				<div class="col-sm-12">
+					<h3 class="habilidades-titulo">Frameworks y Librerías:</h3>
+					<div class="badges-container">
+						<span class="badge spring-boot">Spring Boot</span>
+						<span class="badge angular">Angular</span>
+						<span class="badge nodejs">Node.js</span>
+						<span class="badge hibernate">Hibernate</span>
+						<span class="badge thymeleaf">Thymeleaf</span>
+						<span class="badge bootstrap">Bootstrap</span>
+					</div>
+				</div>
+
+				<!-- Herramientas -->
+				<div class="col-sm-12">
+					<h3 class="habilidades-titulo">Herramientas:</h3>
+					<div class="badges-container">
+						<span class="badge intellij">IntelliJ IDEA</span>
+						<span class="badge netbeans">NetBeans</span>
+						<span class="badge mysql">MySQL</span>
+						<span class="badge github">GitHub</span>
+						<span class="badge vscode">Visual Studio Code</span>
+						<span class="badge insomnia">Insomnia</span>
+						<span class="badge postman">Postman</span>
+						<span class="badge trello">Trello</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Seccion de Cursos -->
+		<div class="seccion-contenedor">
+			<div class="col-sm-12">
+				<h3 class="p-1 mb-4 bg-secondary text-white">Licencias y Cursos</h3>
+			</div>
+
+			<div class="col-sm-12">
+				<p><strong>Instalación y mantenimiento de redes a PYMES:</strong>
+					Reparación de equipos informáticos a particulares (servicio técnico a domicilio).
+					Profesora de Informática en la Asociación mutual Sociedad Italiana de Socorros Mutuos y
+					Cultural de
+					General San Martin, Buenos Aires. Enero 2003 a Septiembre del 2005.
+					Impartiendo clases a grupos de alumnos adultos mayores, mantenimiento del aula de 14
+					equipos
+					y un servidor
+					en Windows 2000.
+					Profesora particular en áreas de ofimática, programación y entornos operativos.
+					Enseñanza a
+					nivel de
+					iniciación dirigida a niños y gente sin experiencia.
+					Formación principalmente en áreas de ofimática (Ms-Office) y entornos operativos Windows
+					y
+					Unix
+					(GNU/Linux).
+					Clases de aplicaciones de Internet, Windows, ofimática, diseño de páginas Web, a
+					particulares, desde 2005.
+				</p>
+			</div>
+
+			<div class="col-sm-12">
+				<p><strong>Diseño, actualización y administración de Sitios Web:</strong>
+					SOUTHDOORS GROUP S.A.
+					Administración del portal web www.argentinaguia.com
+					Diseño y mantenimiento en servidores, correo y atención al cliente personalizada,
+					ofreciendo
+					a cada una de
+					las empresas, soporte informático en alojamiento Web y registro de dominios.
+				</p>
+			</div>
+		</div>
+
+		<!-- Seccion de Capacidades -->
+		<div class="seccion-contenedor">
+			<div class="col-sm-12">
+				<h3 class="p-1 mb-4 bg-secondary text-white">Capacidades y Competencias</h3>
+			</div>
+
+			<div class="row g-0">
+				<div class="col-md-4">
+					<img src="img/cards/card11.jpg" class="img-fluid rounded-start" alt="...">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<ul>
+							<li>Actitud proactiva </li>
+							<li>Versatilidad y capacidad de generar iniciativas en el ámbito
+								laboral.
+							</li>
+							<li>Habilidad para establecer relaciones sociales. Facilidad de
+								aprendizaje.
+							</li>
+							<li>Compromiso con las responsabilidades asignadas.</li>
+							<li>Capacidad para coordinar y supervisar trabajo en equipo. </li>
+							<li>Cumplimiento de los horarios establecidos. </li>
+							<li>Capacidad analítica y reflexiva ante situaciones de exigencia en el
+								ámbito laboral. </li>
+							<li>Capacidad de síntesis. Innovación y creatividad. </li>
+							<li>Sistematización de la documentación y óptima capacidad de redacción.
+							</li>
+							<li>Dominio de tecnologías de comunicación e información. </li>
+							<li>Dominio avanzado de herramientas informáticas. </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Footer -->
