@@ -20,12 +20,20 @@
 	<!-- Barra de Navegación -->
 	<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Porfolio</a>
+			<!-- Logo animado (GIF) -->
+			<a class="navbar-brand" href="#">
+				<img src="img/logo/logo9.gif" alt="Logo animado" class="navbar-logo">
+			</a>
+
+			<!-- Botón de menú para dispositivos móviles -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+
+			<!-- Contenido de la barra de navegación -->
 			<div class="collapse navbar-collapse" id="navbarNav">
+				<!-- Enlaces a las secciones -->
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
 						<a class="nav-link" href="#acerca">Acerca de</a>
@@ -46,6 +54,11 @@
 						<a class="nav-link" href="#contacto">Contacto</a>
 					</li>
 				</ul>
+
+				<!-- Botón "Ingresar" en el extremo derecho -->
+				<div class="ms-3">
+					<a href="#" class="btn btn-ingresar">Ingresar</a>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -147,7 +160,7 @@
 		<!-- Seccion acerca de -->
 		<div class="seccion-contenedor">
 			<div class="col-sm-12">
-				<h3 class="p-1 mb-4 bg-secondary text-white">Acerca de</h3>
+				<h3 class="p-1 mb-4 bg-primary-custom text-white">Acerca de</h3>
 			</div>
 
 			<div class="container-xxl">
@@ -178,17 +191,19 @@
 			</div>
 		</div>
 
-		<!-- Seccion de Experiencia Laboral -->
+		<!-- Sección de Experiencia Laboral -->
 		<div class="seccion-contenedor">
 			<div class="col-sm-12">
-				<h3 class="p-1 mb-4 bg-secondary text-white">Experiencia</h3>
+				<h3 class="p-1 mb-4 bg-primary-custom text-white">Experiencia</h3>
 			</div>
 
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="card" style="width: 18rem;">
-							<img src="img/cards/card7.jpg" class="card-img-top" alt="...">
+				<div class="row justify-content-center"> <!-- Centrar las cards horizontalmente -->
+					<!-- Card 1 -->
+					<div class="col-sm-6 col-md-4 col-lg-3 mb-4"> <!-- Ajustar el tamaño de las columnas -->
+						<div class="card h-100"> <!-- Asegurar que todas las cards tengan la misma altura -->
+							<img src="img/cards/card7.jpg" class="card-img-top"
+								alt="Secretaría Nacional de Niñez, Adolescencia y Familia">
 							<div class="card-body">
 								<h5 class="card-title">Secretaría Nacional de Niñez, Adolescencia y Familia</h5>
 								<p><strong>Técnico Informático Profesional</strong></p>
@@ -197,22 +212,24 @@
 						</div>
 					</div>
 
-					<div class="col-sm-3">
-						<div class="card" style="width: 18rem;">
-							<img src="img/cards/card8.jpg" class="card-img-top" alt="...">
+					<!-- Card 2 -->
+					<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+						<div class="card h-100">
+							<img src="img/cards/card8.jpg" class="card-img-top"
+								alt="Dirección General de Educación Vial y Licencias">
 							<div class="card-body">
-								<h5 class="card-title">Dirección General de Educación Vial y Licencias del
-									Gobierno de la Ciudad
-								</h5>
+								<h5 class="card-title">Dirección General de Educación Vial y Licencias del Gobierno de
+									la Ciudad</h5>
 								<p><strong>Instructor Profesional</strong></p>
 								<p>Octubre 2002 a Octubre 2004</p>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-sm-3">
-						<div class="card" style="width: 18rem;">
-							<img src="img/cards/card10.jpg" class="card-img-top" alt="...">
+					<!-- Card 3 -->
+					<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+						<div class="card h-100">
+							<img src="img/cards/card10.jpg" class="card-img-top" alt="ICONTEAM diseño web">
 							<div class="card-body">
 								<h5 class="card-title">ICONTEAM diseño web</h5>
 								<p><strong>Técnico Informático</strong></p>
@@ -221,9 +238,11 @@
 						</div>
 					</div>
 
-					<div class="col-sm-3">
-						<div class="card" style="width: 18rem;">
-							<img src="img/cards/card9.jpg" class="card-img-top" alt="...">
+					<!-- Card 4 -->
+					<div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+						<div class="card h-100">
+							<img src="img/cards/card9.jpg" class="card-img-top"
+								alt="ELSERVER SRL desarrollo web y hosting">
 							<div class="card-body">
 								<h5 class="card-title">ELSERVER SRL desarrollo web y hosting</h5>
 								<p><strong>Técnico Informático</strong></p>
@@ -237,12 +256,12 @@
 
 		<!-- Seccion de Educacion -->
 		<div class="seccion-contenedor">
-			<h3 class="p-1 mb-4 bg-secondary text-white">Educación</h3>
+			<h3 class="p-1 mb-4 bg-primary-custom text-white">Educación</h3>
 
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4">
-						<div class="card" style="width: 18rem;">
+					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
+						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
 							<img src="img/cards/card1.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title">Formación Universitaria</h5>
@@ -253,8 +272,8 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4">
-						<div class="card" style="width: 18rem;">
+					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
+						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
 							<img src="img/cards/card2.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title">Formación Terciaria</h5>
@@ -265,8 +284,8 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4">
-						<div class="card" style="width: 18rem;">
+					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
+						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
 							<img src="img/cards/card3.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title">Formación Terciaria</h5>
@@ -279,8 +298,8 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-4">
-						<div class="card" style="width: 18rem;">
+					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
+						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
 							<img src="img/cards/card4.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title">Formación Terciaria</h5>
@@ -291,8 +310,8 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4">
-						<div class="card" style="width: 18rem;">
+					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
+						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
 							<img src="img/cards/card5.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title">Formación Secundaria</h5>
@@ -303,8 +322,8 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4">
-						<div class="card" style="width: 18rem;">
+					<div class="col-sm-4 d-flex justify-content-center"> <!-- Centrar contenido en la columna -->
+						<div class="card mx-auto" style="width: 18rem;"> <!-- Centrar la card -->
 							<img src="img/cards/card6.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title">Idiomas</h5>
@@ -321,7 +340,7 @@
 		<!-- Sección de Habilidades -->
 		<div class="seccion-contenedor">
 			<div class="col-sm-12">
-				<h3 class="p-1 mb-4 bg-secondary text-white">Tecnologías y Herramientas</h3>
+				<h3 class="p-1 mb-4 bg-primary-custom text-white">Tecnologías y Herramientas</h3>
 			</div>
 
 			<div class="container-xxl">
@@ -371,7 +390,7 @@
 		<!-- Seccion de Cursos -->
 		<div class="seccion-contenedor">
 			<div class="col-sm-12">
-				<h3 class="p-1 mb-4 bg-secondary text-white">Licencias y Cursos</h3>
+				<h3 class="p-1 mb-4 bg-primary-custom text-white">Licencias y Cursos</h3>
 			</div>
 
 			<div class="col-sm-12">
@@ -401,7 +420,7 @@
 		<!-- Seccion de Capacidades -->
 		<div class="seccion-contenedor">
 			<div class="col-sm-12">
-				<h3 class="p-1 mb-4 bg-secondary text-white">Capacidades y Competencias</h3>
+				<h3 class="p-1 mb-4 bg-primary-custom text-white">Capacidades y Competencias</h3>
 			</div>
 
 			<div class="row g-0">

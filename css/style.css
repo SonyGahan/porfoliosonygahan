@@ -42,21 +42,93 @@ body {
     padding-top: 56px;
 }
 
-.navbar {
+/* Estilos para la barra de navegación */
+.navbar-custom {
     background: var(--primary-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand {
+    font-size: var(--font-size-h3);
+    font-weight: bold;
     color: var(--tertiary-color) !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(231, 215, 193, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+    font-size: var(--font-size-p);
+    color: var(--tertiary-color) !important;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
     color: var(--secondary-color) !important;
+}
+
+/* Estilos para el logo animado (GIF) */
+.navbar-logo {
+    width: 30px; /* Ajusta el tamaño según sea necesario */
+    height: 30px;
+    transition: transform 0.5s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1); /* Efecto de escala al hacer hover */
+}
+
+/* Estilos para el botón "Ingresar" */
+.btn-ingresar {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); /* Gradiente */
+    color: var(--tertiary-color);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: var(--font-size-p);
+    font-weight: 500; /* Texto un poco más grueso */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra difuminada */
+    outline: none; /* Eliminar el borde de enfoque */
+}
+
+.btn-ingresar:hover {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Invertir gradiente al hacer hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2), 0 2px 6px rgba(0, 0, 0, 0.12); /* Sombra más pronunciada al hacer hover */
+}
+
+.btn-ingresar:active {
+    transform: translateY(0); /* Efecto de "presionado" */
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra más suave al hacer clic */
+    outline: none; /* Eliminar el borde de enfoque */
+}
+
+.btn-ingresar:focus {
+    outline: none; /* Eliminar el borde de enfoque */
+}
+
+/* Estilos para el menú en dispositivos móviles */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .btn-ingresar {
+        margin-top: 10px;
+    }
 }
 
 /* Contenedor principal */
@@ -259,6 +331,52 @@ body {
     background: var(--primary-color);
 }
 
+/* Estilos para títulos y párrafos */
+h1 { font-size: var(--font-size-h1); color: var(--text-color-primary); }
+h2 { font-size: var(--font-size-h2); color: var(--text-color-primary); }
+h3 { font-size: var(--font-size-h3); color: var(--text-color-primary); }
+h4 { font-size: var(--font-size-h4); color: var(--text-color-primary); }
+h5 { font-size: var(--font-size-h5); color: var(--text-color-primary); }
+h6 { font-size: var(--font-size-h6); color: var(--text-color-primary); }
+p { font-size: var(--font-size-p); color: var(--text-color-secondary); line-height: 1.6; }
+small { font-size: var(--font-size-small); color: var(--text-color-secondary); }
+
+/* Estilos para las tarjetas de Experiencia Laboral */
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.125); /* Borde suave */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hacer hover */
+}
+
+.card-img-top {
+    border-top-left-radius: 10px; /* Bordes redondeados en la parte superior */
+    border-top-right-radius: 10px;
+    height: 180px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegurar que la imagen cubra el espacio sin distorsionarse */
+}
+
+.card-body {
+    padding: 20px; /* Espaciado interno */
+}
+
+.card-title {
+    font-size: 1.1rem; /* Tamaño del título */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem; /* Tamaño del texto */
+    margin-bottom: 5px;
+}
+
 /* Estilos para la sección de habilidades */
 .habilidades-titulo {
     color: var(--secondary-color);
@@ -313,16 +431,6 @@ body {
 .badge.postman { background-color: #ff6c37; }
 .badge.trello { background-color: #0079bf; }
 
-/* Estilos para títulos y párrafos */
-h1 { font-size: var(--font-size-h1); color: var(--text-color-primary); }
-h2 { font-size: var(--font-size-h2); color: var(--text-color-primary); }
-h3 { font-size: var(--font-size-h3); color: var(--text-color-primary); }
-h4 { font-size: var(--font-size-h4); color: var(--text-color-primary); }
-h5 { font-size: var(--font-size-h5); color: var(--text-color-primary); }
-h6 { font-size: var(--font-size-h6); color: var(--text-color-primary); }
-p { font-size: var(--font-size-p); color: var(--text-color-secondary); line-height: 1.6; }
-small { font-size: var(--font-size-small); color: var(--text-color-secondary); }
-
 /* Estilos para el footer */
 #fondopie {
     background: var(--quinary-color);
@@ -374,17 +482,10 @@ small {
     text-align: center;
 }
 
-/* Estilos para las tarjetas */
-.card {
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.bg-secondary {
-    background: var(--secondary-color) !important;
+/* Nueva clase para el color de fondo primario */
+.bg-primary-custom {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border-radius: 5px;
+    padding-left: 1rem !important; /* Forzamos el padding con !important */
 }
