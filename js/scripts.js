@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Animaciones de entrada para las secciones
-    const secciones = document.querySelectorAll('.seccion-contenedor');
+    const secciones = document.querySelectorAll('.seccion-contenedor:not(#cursos)');
     const presentacion = document.querySelector('.presentacion-personal');
     const logos = document.querySelector('.logos-institucionales');
     const cardBody = document.querySelector('.card-body');

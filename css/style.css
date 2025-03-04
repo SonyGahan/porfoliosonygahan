@@ -7,15 +7,16 @@
     --quaternary-color: #A78A7F;
     --quinary-color: #735751;
 
-    /* Variables de texto (reducidas) */
-    --font-size-h1: 2.5rem;
-    --font-size-h2: 1.75rem;
-    --font-size-h3: 1.5rem;
-    --font-size-h4: 1.25rem;
-    --font-size-h5: 1.1rem;
-    --font-size-h6: 1rem;
-    --font-size-p: 0.9rem;
-    --font-size-small: 0.8rem;
+    /* Tamaños de fuente */
+        --font-size-h1: 2rem;          /* Tamaño para h1 */
+        --font-size-h2: 1.5rem;        /* Tamaño para h2 */
+        --font-size-h3: 1.25rem;       /* Tamaño para h3 */
+        --font-size-h4: 1.125rem;      /* Tamaño para h4 */
+        --font-size-h5: 1rem;          /* Tamaño para h5 */
+        --font-size-h6: 0.875rem;      /* Tamaño para h6 */
+        --font-size-p: 0.875rem;       /* Tamaño para párrafos */
+        --font-size-small: 0.75rem;    /* Tamaño para texto pequeño */
+    
 
     /* Colores de texto */
     --text-color-primary: var(--tertiary-color);
@@ -23,6 +24,9 @@
 
     /* Ancho del contenido */
     --contenedor-ancho: 1200px;
+
+    /*Familia de fuentes */
+    --font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -35,7 +39,7 @@
 body {
     background: var(--tertiary-color) url('../img/fondo/fondo1.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: sans-serif;
+    font-family: var(--font-family);
     margin: 0 auto;
     width: 100%;
     padding: 0;
@@ -45,25 +49,22 @@ body {
 /* Estilos para la barra de navegación */
 .navbar-custom {
     background: var(--primary-color);
-    padding: 10px 0;
+    padding: 5px 0; /* Reducimos el padding vertical para disminuir la altura */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand {
-    font-size: var(--font-size-h3);
-    font-weight: bold;
-    color: var(--tertiary-color) !important;
+/* Estilos para el logo animado (GIF) */
+.navbar-logo {
+    width: 40px; /* Aumentamos el tamaño del logo */
+    height: 40px;
+    transition: transform 0.5s ease;
 }
 
-.navbar-toggler {
-    border: none;
-    outline: none;
+.navbar-logo:hover {
+    transform: scale(1.1); /* Efecto de escala al hacer hover */
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(231, 215, 193, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
+/* Ajustes para los enlaces de navegación */
 .nav-link {
     font-size: var(--font-size-p);
     color: var(--tertiary-color) !important;
@@ -75,18 +76,7 @@ body {
     color: var(--secondary-color) !important;
 }
 
-/* Estilos para el logo animado (GIF) */
-.navbar-logo {
-    width: 30px; /* Ajusta el tamaño según sea necesario */
-    height: 30px;
-    transition: transform 0.5s ease;
-}
-
-.navbar-logo:hover {
-    transform: scale(1.1); /* Efecto de escala al hacer hover */
-}
-
-/* Estilos para el botón "Ingresar" */
+/* Ajustes para el botón "Ingresar" */
 .btn-ingresar {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); /* Gradiente */
     color: var(--tertiary-color);
@@ -129,6 +119,11 @@ body {
     .btn-ingresar {
         margin-top: 10px;
     }
+}
+
+/* Habilitar scroll suave en toda la página */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Contenedor principal */
@@ -183,19 +178,6 @@ body {
     padding: 0 20px;
 }
 
-/* Transición suave para el carrusel */
-.carousel-fade .carousel-item {
-    transition: opacity 1s ease-in-out;
-}
-
-.carousel-fade .carousel-item.active {
-    opacity: 1;
-}
-
-.carousel-fade .carousel-item:not(.active) {
-    opacity: 0;
-    display: block;
-}
 
 /* Estilos para el contenedor de la imagen de perfil */
 .profile-container {
@@ -222,6 +204,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     opacity: 0;
+    opacity: 1; /* Se mantiene visible siempre */
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
@@ -309,27 +292,6 @@ body {
     margin-bottom: 0;
 }
 
-/* Estilos para la botonera */
-.botonera {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.btn-custom {
-    background: var(--secondary-color);
-    color: var(--tertiary-color);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: var(--font-size-p);
-    margin: 0 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-custom:hover {
-    background: var(--primary-color);
-}
 
 /* Estilos para títulos y párrafos */
 h1 { font-size: var(--font-size-h1); color: var(--text-color-primary); }
@@ -367,7 +329,7 @@ small { font-size: var(--font-size-small); color: var(--text-color-secondary); }
 
 /* Mejora la legibilidad del texto */
 .seccion-contenedor p {
-    font-size: 1rem; /* Tamaño de fuente ligeramente más grande */
+    font-size: 0.9rem; 
     line-height: 1.6; /* Espaciado entre líneas para mejor lectura */
     margin-bottom: 1rem; /* Espaciado entre párrafos */
 }
@@ -463,6 +425,59 @@ small { font-size: var(--font-size-small); color: var(--text-color-secondary); }
 .badge.postman { background-color: #ff6c37; }
 .badge.trello { background-color: #0079bf; }
 
+
+/* Estilos para la sección de Licencias y Cursos */
+#cursos .cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tarjetas responsive */
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+#cursos .curso-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 15px; /* Espaciado interno */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cursos .curso-card:hover {
+    transform: translateY(-5px); /* Efecto hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hacer hover */
+}
+
+#cursos .curso-logo {
+    width: 70px; /* Tamaño del logo */
+    height: 70px;
+    margin-right: 15px; /* Espacio entre el logo y el texto */
+}
+
+#cursos .curso-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta el logo sin distorsionarlo */
+    border-radius: 8px; /* Bordes redondeados para el logo */
+}
+
+#cursos .curso-info {
+    flex: 1; /* El texto ocupa el espacio restante */
+}
+
+#cursos .curso-info h4 {
+    font-size: 1.1rem; /* Tamaño del título del curso */
+    margin-bottom: 10px;
+    color: var(--primary-color); /* Color del título */
+}
+
+#cursos .curso-info p {
+    font-size: 0.9rem; /* Tamaño de fuente para los párrafos */
+    margin-bottom: 5px;
+    color: var(--quinary-color); /* Color del texto */
+}
+
+
 /* Estilos para el footer */
 #fondopie {
     background: var(--quinary-color);
@@ -507,11 +522,18 @@ small { font-size: var(--font-size-small); color: var(--text-color-secondary); }
     transform: scale(1.2);
 }
 
-small {
-    display: block;
-    margin-top: 20px;
-    font-size: var(--font-size-small);
-    text-align: center;
+/* Estilos para el texto de derechos reservados */
+#fondopie small {
+    display: block; /* Asegura que el texto ocupe su propia línea */
+    text-align: center; /* Centra el texto */
+    color: var(--tertiary-color); /* Color del texto */
+    font-size: var(--font-size-small); /* Tamaño de fuente */
+    margin-top: 40px; /* Aumentamos el margen superior para separar los iconos del texto */
+}
+
+/* Asegurar espacio antes del footer */
+#fondopie {
+    margin-top: 40px; /* Espacio superior */
 }
 
 /* Nueva clase para el color de fondo primario */
