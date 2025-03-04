@@ -341,6 +341,38 @@ h6 { font-size: var(--font-size-h6); color: var(--text-color-primary); }
 p { font-size: var(--font-size-p); color: var(--text-color-secondary); line-height: 1.6; }
 small { font-size: var(--font-size-small); color: var(--text-color-secondary); }
 
+/* Estilos para la sección "Acerca de" */
+.seccion-contenedor .row {
+    align-items: stretch; /* Asegura que las columnas tengan la misma altura */
+}
+
+.seccion-contenedor .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    padding: 15px; /* Espaciado interno para mejorar la legibilidad */
+}
+
+.seccion-contenedor .col-md-4.text-left {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.seccion-contenedor .col-md-4 img {
+    width: 100%; /* La imagen ocupa el ancho completo de la columna */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 100%; /* Asegura que la imagen no sea más alta que el contenido */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Mejora la legibilidad del texto */
+.seccion-contenedor p {
+    font-size: 1rem; /* Tamaño de fuente ligeramente más grande */
+    line-height: 1.6; /* Espaciado entre líneas para mejor lectura */
+    margin-bottom: 1rem; /* Espaciado entre párrafos */
+}
+
+
 /* Estilos para las tarjetas de Experiencia Laboral */
 .card {
     margin-bottom: 20px;
