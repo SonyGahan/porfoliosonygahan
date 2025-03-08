@@ -71,20 +71,6 @@
 		<!-- Carrusel dentro de un contenedor claro y redondeado -->
 		<div class="seccion-contenedor">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-				<!-- Indicadores del carrusel -->
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-						class="active" aria-current="true" aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-						aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-						aria-label="Slide 3"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-						aria-label="Slide 4"></button>
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-						aria-label="Slide 5"></button>
-				</div>
-
 				<!-- Contenido del carrusel (imágenes) -->
 				<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -103,18 +89,6 @@
 						<img src="img/slider/slider5.jpg" class="d-block w-100" alt="Slide 5">
 					</div>
 				</div>
-
-				<!-- Controles del carrusel (anterior/siguiente) -->
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
 
 				<!-- Título centrado sobre el carrusel -->
 				<h1 id="tituloprincipal">Porfolio Web | Sonia Pereira</h1>
@@ -362,45 +336,127 @@
 				<h3 class="p-1 mb-4 bg-primary-custom text-white">Tecnologías y Herramientas</h3>
 			</div>
 
-			<div class="container-xxl">
-				<!-- Lenguajes -->
-				<div class="col-sm-12">
-					<h3 class="habilidades-titulo">Lenguajes:</h3>
-					<div class="badges-container">
-						<span class="badge java">Java</span>
-						<span class="badge typescript">TypeScript</span>
-						<span class="badge javascript">JavaScript</span>
-						<span class="badge html">HTML5</span>
-						<span class="badge css">CSS</span>
-						<span class="badge php">PHP</span>
+			<!-- Pestañas para categorías -->
+			<ul class="nav nav-tabs" id="skillsTabs" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="lenguajes-tab" data-bs-toggle="tab" data-bs-target="#lenguajes"
+						type="button" role="tab">Lenguajes</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="frameworks-tab" data-bs-toggle="tab" data-bs-target="#frameworks"
+						type="button" role="tab">Frameworks y Librerías</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="herramientas-tab" data-bs-toggle="tab" data-bs-target="#herramientas"
+						type="button" role="tab">Herramientas</button>
+				</li>
+			</ul>
+
+			<!-- Contenido de las pestañas -->
+			<div class="tab-content" id="skillsTabsContent">
+				<!-- Pestaña 1: Lenguajes -->
+				<div class="tab-pane fade show active" id="lenguajes" role="tabpanel">
+					<div class="container text-center mt-3">
+						<div class="row">
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="javaChart" class="skill-chart"></canvas>
+								<p>Java</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="typescriptChart" class="skill-chart"></canvas>
+								<p>TypeScript</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="javascriptChart" class="skill-chart"></canvas>
+								<p>JavaScript</p>
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="htmlChart" class="skill-chart"></canvas>
+								<p>HTML</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="cssChart" class="skill-chart"></canvas>
+								<p>CSS</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="phpChart" class="skill-chart"></canvas>
+								<p>PHP</p>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<!-- Frameworks y Librerías -->
-				<div class="col-sm-12">
-					<h3 class="habilidades-titulo">Frameworks y Librerías:</h3>
-					<div class="badges-container">
-						<span class="badge spring-boot">Spring Boot</span>
-						<span class="badge angular">Angular</span>
-						<span class="badge nodejs">Node.js</span>
-						<span class="badge hibernate">Hibernate</span>
-						<span class="badge thymeleaf">Thymeleaf</span>
-						<span class="badge bootstrap">Bootstrap</span>
+				<!-- Pestaña 2: Frameworks y Librerías -->
+				<div class="tab-pane fade" id="frameworks" role="tabpanel">
+					<div class="container text-center mt-3">
+						<div class="row">
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="springChart" class="skill-chart"></canvas>
+								<p>Spring Boot</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="angularChart" class="skill-chart"></canvas>
+								<p>Angular</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="nodejsChart" class="skill-chart"></canvas>
+								<p>Node.js</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="hibernateChart" class="skill-chart"></canvas>
+								<p>Hibernate</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="thymeleafChart" class="skill-chart"></canvas>
+								<p>Thymeleaf</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="bootstrapChart" class="skill-chart"></canvas>
+								<p>Bootstrap</p>
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<!-- Herramientas -->
-				<div class="col-sm-12">
-					<h3 class="habilidades-titulo">Herramientas:</h3>
-					<div class="badges-container">
-						<span class="badge intellij">IntelliJ IDEA</span>
-						<span class="badge netbeans">NetBeans</span>
-						<span class="badge mysql">MySQL</span>
-						<span class="badge github">GitHub</span>
-						<span class="badge vscode">Visual Studio Code</span>
-						<span class="badge insomnia">Insomnia</span>
-						<span class="badge postman">Postman</span>
-						<span class="badge trello">Trello</span>
+				<!-- Pestaña 3: Herramientas -->
+				<div class="tab-pane fade" id="herramientas" role="tabpanel">
+					<div class="container text-center mt-3">
+						<div class="row">
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="intellijChart" class="skill-chart"></canvas>
+								<p>IntelliJ IDEA</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="netbeansChart" class="skill-chart"></canvas>
+								<p>NetBeans</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="mysqlChart" class="skill-chart"></canvas>
+								<p>MySQL</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="githubChart" class="skill-chart"></canvas>
+								<p>Github</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="vscodeChart" class="skill-chart"></canvas>
+								<p>Visual Studio</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="insomniaChart" class="skill-chart"></canvas>
+								<p>Insomnia</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="postmanChart" class="skill-chart"></canvas>
+								<p>Postman</p>
+							</div>
+							<div class="col-md-4 col-sm-6 d-flex flex-column align-items-center">
+								<canvas id="trelloChart" class="skill-chart"></canvas>
+								<p>Trello</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -852,7 +908,7 @@
 
 	<!-- Footer -->
 	<footer id="fondopie">
-		<div class="barrapie">
+		<div class="barrapie" id="contacto">
 			<ul class="social">
 				<li><a href="mailto:sonygahan@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
 				<li><a href="http://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -871,6 +927,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 	<!-- Script personalizado -->
 	<script src="js/scripts.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>

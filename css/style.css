@@ -444,14 +444,11 @@ small {
 
 .card-title {
     font-size: 1.1rem;
-    /* Tamaño del título */
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 0.9rem;
-    /* Tamaño del texto */
     margin-bottom: 5px;
 }
 
@@ -462,133 +459,42 @@ small {
     font-size: var(--font-size-h3);
 }
 
-.badges-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.badge {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: var(--font-size-small);
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.badge:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
 /* Colores y estilos para cada badge */
-.badge.java {
-    background-color: #f89820;
-}
-
-.badge.typescript {
-    background-color: #007acc;
-}
-
-.badge.javascript {
-    background-color: #f7df1e;
-    color: black;
-}
-
-.badge.html {
-    background-color: #e34f26;
-}
-
-.badge.css {
-    background-color: #1572b6;
-}
-
-.badge.php {
-    background-color: #777bb4;
-}
-
-.badge.spring-boot {
-    background-color: #6db33f;
-}
-
-.badge.angular {
-    background-color: #dd0031;
-}
-
-.badge.nodejs {
-    background-color: #43853d;
-}
-
-.badge.hibernate {
-    background-color: #59666c;
-}
-
-.badge.thymeleaf {
-    background-color: #005c00;
-}
-
-.badge.bootstrap {
-    background-color: #563d7c;
-}
-
-.badge.intellij {
-    background-color: #000000;
-}
-
-.badge.netbeans {
-    background-color: #1c75bc;
-}
-
-.badge.mysql {
-    background-color: #00758f;
-}
-
-.badge.github {
-    background-color: #181717;
-}
-
-.badge.vscode {
-    background-color: #0078d7;
-}
-
-.badge.insomnia {
-    background-color: #4e5d94;
-}
-
-.badge.postman {
-    background-color: #ff6c37;
-}
-
-.badge.trello {
-    background-color: #0079bf;
+.skill-chart {
+    width: 100px !important;
+    height: 100px !important;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 
 /* Estilos para la sección de Licencias y Cursos */
 #cursos .seccion-contenedor {
     padding: 20px;
-    margin-bottom: 40px; /* Más espacio entre secciones */
+    margin-bottom: 40px;
+    /* Más espacio entre secciones */
 }
 
 #cursos .cursos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tarjetas responsive */
-    gap: 20px; /* Espacio entre tarjetas */
-    margin-bottom: 30px; /* Espacio entre categorías */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Tarjetas responsive */
+    gap: 20px;
+    /* Espacio entre tarjetas */
+    margin-bottom: 30px;
+    /* Espacio entre categorías */
 }
 
 #cursos .curso-card {
     display: flex;
-    flex-direction: column; /* Cambiamos a columna para mejor adaptación en móviles */
+    flex-direction: column;
+    /* Cambiamos a columna para mejor adaptación en móviles */
     align-items: center;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px; /* Espacio entre tarjetas */
+    margin-bottom: 15px;
+    /* Espacio entre tarjetas */
     padding: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -599,9 +505,11 @@ small {
 }
 
 #cursos .curso-logo {
-    width: 60px; /* Logos un poco más grandes */
+    width: 60px;
+    /* Logos un poco más grandes */
     height: 60px;
-    margin-bottom: 10px; /* Espacio entre el logo y el texto */
+    margin-bottom: 10px;
+    /* Espacio entre el logo y el texto */
 }
 
 #cursos .curso-logo img {
@@ -612,42 +520,53 @@ small {
 }
 
 #cursos .curso-info {
-    text-align: center; /* Centramos el texto */
-    padding: 10px; /* Espacio interno en las tarjetas */
+    text-align: center;
+    /* Centramos el texto */
+    padding: 10px;
+    /* Espacio interno en las tarjetas */
 }
 
 #cursos .curso-info h5 {
-    font-size: 0.9rem; /* Texto más pequeño */
+    font-size: 0.9rem;
+    /* Texto más pequeño */
     margin-bottom: 8px;
     color: var(--primary-color);
 }
 
 #cursos .curso-info p {
-    font-size: 0.8rem; /* Texto más pequeño */
+    font-size: 0.8rem;
+    /* Texto más pequeño */
     margin-bottom: 5px;
     color: var(--quinary-color);
 }
 
 #cursos .curso-info .btn {
-    font-size: 0.8rem; /* Botón más pequeño */
+    font-size: 0.8rem;
+    /* Botón más pequeño */
     padding: 5px 10px;
-    margin-top: 10px; /* Espacio entre el texto y el botón */
+    margin-top: 10px;
+    /* Espacio entre el texto y el botón */
 }
 
 /* Estilos para las pestañas */
 .nav-tabs {
     margin-bottom: 20px;
-    flex-wrap: nowrap; /* Evita que las pestañas se rompan en varias líneas */
-    overflow-x: auto; /* Permite hacer scroll horizontal en móviles */
+    flex-wrap: nowrap;
+    /* Evita que las pestañas se rompan en varias líneas */
+    overflow-x: auto;
+    /* Permite hacer scroll horizontal en móviles */
 }
 
 .nav-tabs .nav-link {
-    font-size: 0.9rem; /* Texto más pequeño en las pestañas */
+    font-size: 0.9rem;
+    /* Texto más pequeño en las pestañas */
     color: var(--quinary-color);
     border: 1px solid transparent;
     border-radius: 5px 5px 0 0;
-    padding: 10px 15px; /* Padding más pequeño */
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    padding: 10px 15px;
+    /* Padding más pequeño */
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
 }
 
 .nav-tabs .nav-link.active {
@@ -662,8 +581,10 @@ small {
 
 /* Estilos para los botones "Ver más" */
 .btn-ver-mas {
-    background-color: var(--primary-color); /* Color primario del sitio */
-    color: var(--tertiary-color); /* Color del texto */
+    background-color: var(--primary-color);
+    /* Color primario del sitio */
+    color: var(--tertiary-color);
+    /* Color del texto */
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -671,26 +592,34 @@ small {
     font-weight: 500;
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
-    text-transform: uppercase; /* Texto en mayúsculas */
-    letter-spacing: 0.5px; /* Espaciado entre letras */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    letter-spacing: 0.5px;
+    /* Espaciado entre letras */
 }
 
 .btn-ver-mas:hover {
-    background-color: var(--secondary-color); /* Color secundario al hacer hover */
-    transform: translateY(-2px); /* Efecto de elevación */
+    background-color: var(--secondary-color);
+    /* Color secundario al hacer hover */
+    transform: translateY(-2px);
+    /* Efecto de elevación */
 }
 
 .btn-ver-mas:active {
-    transform: translateY(0); /* Efecto de "presionado" */
+    transform: translateY(0);
+    /* Efecto de "presionado" */
 }
+
 /* Media queries para ajustes en móviles */
 @media (max-width: 768px) {
     #cursos .cursos-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Tarjetas más pequeñas en móviles */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Tarjetas más pequeñas en móviles */
     }
 
     .nav-tabs .nav-link {
-        font-size: 0.8rem; /* Texto más pequeño en móviles */
+        font-size: 0.8rem;
+        /* Texto más pequeño en móviles */
         padding: 8px 12px;
     }
 }
