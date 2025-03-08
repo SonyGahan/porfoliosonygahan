@@ -412,258 +412,437 @@
 				<h3 class="p-1 mb-4 bg-primary-custom text-white">Licencias y Cursos</h3>
 			</div>
 
-			<div class="container">
-				<div class="cursos-grid">
-					<!-- Curso 1 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
+			<!-- Pestañas para categorías -->
+			<ul class="nav nav-tabs" id="cursosTabs" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="desarrollo-web-tab" data-bs-toggle="tab"
+						data-bs-target="#desarrollo-web" type="button" role="tab" aria-controls="desarrollo-web"
+						aria-selected="true">Desarrollo Web</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="ia-tab" data-bs-toggle="tab" data-bs-target="#ia" type="button"
+						role="tab" aria-controls="ia" aria-selected="false">Inteligencia Artificial</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="idiomas-tab" data-bs-toggle="tab" data-bs-target="#idiomas"
+						type="button" role="tab" aria-controls="idiomas" aria-selected="false">Idiomas</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="otros-tab" data-bs-toggle="tab" data-bs-target="#otros" type="button"
+						role="tab" aria-controls="otros" aria-selected="false">Otros</button>
+				</li>
+			</ul>
+
+			<!-- Contenido de las pestañas -->
+			<div class="tab-content" id="cursosTabsContent">
+				<!-- Pestaña 1: Desarrollo Web -->
+				<div class="tab-pane fade show active" id="desarrollo-web" role="tabpanel"
+					aria-labelledby="desarrollo-web-tab">
+					<div class="cursos-grid">
+						<!-- Curso 1 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Java y Spring Framework</h5>
+								<p><strong>Institución:</strong> ONE Alura Latam</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso1">Ver más</button>
+								<div id="detallesCurso1" class="collapse">
+									<p><strong>Expedición:</strong> ene. 2025</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con
+										JAVA y SpringBoot Framework.</p>
+								</div>
+							</div>
 						</div>
-						<div class="curso-info">
-							<h4>IA Generativa</h4>
-							<p><strong>Institución:</strong> ONE Alura Latam</p>
-							<p><strong>Expedición:</strong> abr. 2025</p>
+						<!-- Curso 2 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Java Orientado a Objetos</h5>
+								<p><strong>Institución:</strong> ONE Alura Latam</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso2">Ver más</button>
+								<div id="detallesCurso2" class="collapse">
+									<p><strong>Expedición:</strong> dic. 2024
+									</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo orientado a
+										Objetos.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 3 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/codoacodologo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Codo a Codo 4.0 - Full Stack PHP</h5>
+								<p><strong>Institución:</strong> Agencia de Habilidades para el Futuro</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso3">Ver más</button>
+								<div id="detallesCurso3" class="collapse">
+									<p><strong>Expedición:</strong> jul. 2024</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con
+										PHP.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 4 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Programación con JavaScript</h5>
+								<p><strong>Institución:</strong> ONE Alura Latam</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso4">Ver más</button>
+								<div id="detallesCurso4" class="collapse">
+									<p><strong>Expedición:</strong> jun. 2024</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con
+										JS.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 5 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/codoacodologo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Codo a Codo 4.0 - Desarrollo Web (JavaScript/NodeJS)</h5>
+								<p><strong>Institución:</strong> Agencia de Habilidades para el Futuro</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso5">Ver más</button>
+								<div id="detallesCurso5" class="collapse">
+									<p><strong>Expedición:</strong> may. 2024</p>
+									<p><strong>Descripción:</strong> Desarrollo web Fullstack con
+										JS/NodeJS.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 6 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/itpatagonia_logo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>IT Patagonia - Bootcamp JAVA</h5>
+								<p><strong>Institución:</strong> IT Patagonia - Codeki</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso6">Ver más</button>
+								<div id="detallesCurso6" class="collapse">
+									<p><strong>Expedición:</strong> may. 2024</p>
+									<p><strong>Descripción:</strong> Bootcamp avanzado sobre desarrollo BackEnd con
+										JAVA.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 7 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/utnlogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Desarrollador JAVA intermedio</h5>
+								<p><strong>Institución:</strong> Universidad Tecnológica Nacional</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso7">Ver más</button>
+								<div id="detallesCurso7" class="collapse">
+									<p><strong>Expedición:</strong> nov. 2023</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo BackEnd con
+										JAVA.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 8 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/unnelogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Programador Diseño Dinamico FrontEnd</h5>
+								<p><strong>Institución:</strong> Universidad Nacional del Nordeste</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso8">Ver más</button>
+								<div id="detallesCurso8" class="collapse">
+									<p><strong>Expedición:</strong> ago. 2023</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web FrontEnd
+										con Angular.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 9 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/itmasterlogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Programador Web Full StackP</h5>
+								<p><strong>Institución:</strong> IT Masters (Charles Sturt University)</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso9">Ver más</button>
+								<div id="detallesCurso9" class="collapse">
+									<p><strong>Expedición:</strong> ago. 2023</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre desarrollo web con
+										JS/React.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 10 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/codoacodologo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Codo a Codo 4.0 - Full Stack Java</h5>
+								<p><strong>Institución:</strong> Agencia de Habilidades para el Futuro</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso10">Ver más</button>
+								<div id="detallesCurso10" class="collapse">
+									<p><strong>Expedición:</strong> jul. 2023</p>
+									<p><strong>Descripción:</strong> Curso avanzado Fullstack con
+										JS/JAVA.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 11 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/unnelogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Programador Diseño Estatico FrontEnd</h5>
+								<p><strong>Institución:</strong> Universidad Nacional del Nordeste</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso11">Ver más</button>
+								<div id="detallesCurso11" class="collapse">
+									<p><strong>Expedición:</strong> jul. 2023</p>
+									<p><strong>Descripción:</strong> Desarrollo web con
+										HTML,CSS,JS.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 12 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/utnlogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Desarrollador Java Programación / Testing</h5>
+								<p><strong>Institución:</strong> Universidad Tecnológica Nacional</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso12">Ver más</button>
+								<div id="detallesCurso12" class="collapse">
+									<p><strong>Expedición:</strong> abr. 2023</p>
+									<p><strong>Descripción:</strong> Trayecto formativo de programacion JAVA y
+										Testing.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 13 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/logointi.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>#YoProgramo, Full Stack Junior</h5>
+								<p><strong>Institución:</strong> INTI</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso13">Ver más</button>
+								<div id="detallesCurso13" class="collapse">
+									<p><strong>Expedición:</strong> ago. 2022</p>
+									<p><strong>Descripción:</strong> Desarrollo Fullstack con
+										ANGULAR/MySQL/SPRINGBOOT.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 14 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/mumukilogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5># Se Programar Argentina Programa</h5>
+								<p><strong>Institución:</strong> INTI</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCurso14">Ver más</button>
+								<div id="detallesCurso14" class="collapse">
+									<p><strong>Expedición:</strong> oct. 2021</p>
+									<p><strong>Descripción:</strong> Curso de programación con
+										MUMUKI/JS/RUBY.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Repite para otros cursos de Desarrollo Web -->
+					</div>
+				</div>
+
+				<!-- Pestaña 2: Inteligencia Artificial -->
+				<div class="tab-pane fade" id="ia" role="tabpanel" aria-labelledby="ia-tab">
+					<div class="cursos-grid">
+						<!-- Curso 1 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>IA Generativa</h5>
+								<p><strong>Institución:</strong> ONE Alura Latam</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCursoIA1">Ver más</button>
+								<div id="detallesCursoIA1" class="collapse">
+									<p><strong>Expedición:</strong> abr. 2025</p>
+									<p><strong>Descripción:</strong> Curso avanzado sobre IA generativa.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 2 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Inteligencia Artificial y Java</h5>
+								<p><strong>Institución:</strong> ONE Alura Latam</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCursoIA2">Ver más</button>
+								<div id="detallesCursoIA2" class="collapse">
+									<p><strong>Expedición:</strong> dic. 2024</p>
+									<p><strong>Descripción:</strong> Implementación de IA en desarrollos con JAVA.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 3 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/ialablogo.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Data Science y Programación IA</h5>
+								<p><strong>Institución:</strong> UBA IALAB</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCursoIA3">Ver más</button>
+								<div id="detallesCursoIA3" class="collapse">
+									<p><strong>Expedición:</strong> ago. 2023</p>
+									<p><strong>Descripción:</strong> Implementación de IA en análisis de datos con
+										Python.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Curso 4 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/secretariaecodelconocimiento.jpeg" alt="Logo Alura">
+							</div>
+							<div class="curso-info">
+								<h5>Data Science y Programación IA</h5>
+								<p><strong>Institución:</strong> Secretaría de Economía del Conocimiento</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCursoIA4">Ver más</button>
+								<div id="detallesCursoIA4" class="collapse">
+									<p><strong>Expedición:</strong> feb. 2023</p>
+									<p><strong>Descripción:</strong> Deep Learning and Data Analytics.</p>
+								</div>
+							</div>
 						</div>
 					</div>
+				</div>
 
-					<!-- Curso 2 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Oracle Cloud Infrastructure</h4>
-							<p><strong>Institución:</strong> ONE Alura Latam</p>
-							<p><strong>Expedición:</strong> abr. 2025</p>
+				<!-- Pestaña 3: Idiomas -->
+				<div class="tab-pane fade" id="idiomas" role="tabpanel" aria-labelledby="idiomas-tab">
+					<div class="cursos-grid">
+						<!-- Curso 1 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/cuilogo.jpeg" alt="Logo CUI">
+							</div>
+							<div class="curso-info">
+								<h5>Inglés Técnico</h5>
+								<p><strong>Institución:</strong> Centro Universitario de Idiomas (CUI)</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCursoIdiomas1">Ver más</button>
+								<div id="detallesCursoIdiomas1" class="collapse">
+									<p><strong>Expedición:</strong> ago. 2023</p>
+									<p><strong>Descripción:</strong> Inglés Técnico para Desarrolladores de Software.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
+				</div>
 
-					<!-- Curso 3 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
+				<!-- Pestaña 4: Otros -->
+				<div class="tab-pane fade" id="otros" role="tabpanel" aria-labelledby="otros-tab">
+					<div class="cursos-grid">
+						<!-- Curso 1 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/aluralogo.jpeg" alt="Logo UTN">
+							</div>
+							<div class="curso-info">
+								<h5>Oracle Cloud Infrastructure</h5>
+								<p><strong>Institución:</strong> ONE Alura Latam</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCursoOtros1">Ver más</button>
+								<div id="detallesCursoOtros1" class="collapse">
+									<p><strong>Expedición:</strong> abr. 2025</p>
+									<p><strong>Descripción:</strong> Implementación de una aplicación en la nube y BD e
+										infraestructura como código.</p>
+								</div>
+							</div>
 						</div>
-						<div class="curso-info">
-							<h4>SQL con MySQL Server de Oracle</h4>
-							<p><strong>Institución:</strong> ONE Alura Latam</p>
-							<p><strong>Expedición:</strong> abr. 2025</p>
+						<!-- Curso 2 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/aluralogo.jpeg" alt="Logo UTN">
+							</div>
+							<div class="curso-info">
+								<h5>SQL con MySQL Server de Oracle</h5>
+								<p><strong>Institución:</strong> ONE Alura Latam</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCursoOtros2">Ver más</button>
+								<div id="detallesCursoOtros2" class="collapse">
+									<p><strong>Expedición:</strong> abr. 2025</p>
+									<p><strong>Descripción:</strong> Formación: SQL con MySQL.</p>
+								</div>
+							</div>
 						</div>
-					</div>
-
-					<!-- Curso 4 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
+						<!-- Curso 3 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/aluralogo.jpeg" alt="Logo UTN">
+							</div>
+							<div class="curso-info">
+								<h5>Emprendimiento, Agilidad y Protagonismo Profesional</h5>
+								<p><strong>Institución:</strong> ONE Alura Latam</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCursoOtros3">Ver más</button>
+								<div id="detallesCursoOtros3" class="collapse">
+									<p><strong>Expedición:</strong> sept. 2024</p>
+									<p><strong>Descripción:</strong> Desarrollo de habilidades profesionales.</p>
+								</div>
+							</div>
 						</div>
-						<div class="curso-info">
-							<h4>Java y Spring Framework</h4>
-							<p><strong>Institución:</strong> ONE Alura Latam</p>
-							<p><strong>Expedición:</strong> ene. 2025</p>
-						</div>
-					</div>
-
-					<!-- Curso 5 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Java Orientado a Objetos</h4>
-							<p><strong>Institución:</strong> ONE Alura Latam</p>
-							<p><strong>Expedición:</strong> dic. 2024</p>
-						</div>
-					</div>
-
-					<!-- Curso 6 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Inteligencia Artificial y Java</h4>
-							<p><strong>Institución:</strong> ONE Alura Latam</p>
-							<p><strong>Expedición:</strong> dic. 2024</p>
-						</div>
-					</div>
-
-					<!-- Curso 7 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/codoacodologo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Codo a Codo 4.0 - Full Stack PHP</h4>
-							<p><strong>Institución:</strong> Agencia de Habilidades para el Futuro</p>
-							<p><strong>Expedición:</strong> jul. 2024</p>
-						</div>
-					</div>
-
-
-					<!-- Curso 8 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/aluralogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Programación con JavaScript</h4>
-							<p><strong>Institución:</strong> ONE Alura Latam</p>
-							<p><strong>Expedición:</strong> jun. 2024</p>
-						</div>
-					</div>
-
-					<!-- Curso 9 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/codoacodologo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Codo a Codo 4.0 - Desarrollo Web (JavaScript/NodeJS)</h4>
-							<p><strong>Institución:</strong> Agencia de Habilidades para el Futuro</p>
-							<p><strong>Expedición:</strong> may. 2024</p>
-						</div>
-					</div>
-
-					<!-- Curso 10 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/itpatagonia_logo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>IT Patagonia - Bootcamp JAVA</h4>
-							<p><strong>Institución:</strong> IT Patagonia - Codeki</p>
-							<p><strong>Expedición:</strong> may. 2024</p>
-						</div>
-					</div>
-
-					<!-- Curso 11 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/utnlogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Desarrollador JAVA intermedio</h4>
-							<p><strong>Institución:</strong> Universidad Tecnológica Nacional</p>
-							<p><strong>Expedición:</strong> nov. 2023</p>
-						</div>
-					</div>
-
-					<!-- Curso 12 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/ialablogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Data Science y Programacion en Inteligencia Artificial</h4>
-							<p><strong>Institución:</strong> UBA IALAB</p>
-							<p><strong>Expedición:</strong> ago. 2023</p>
-						</div>
-					</div>
-
-					<!-- Curso 13 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/cuilogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Ingles General para Desarrolladores de Software</h4>
-							<p><strong>Institución:</strong> Centro Universitario de Idiomas (CUI)</p>
-							<p><strong>Expedición:</strong> ago. 2023</p>
-						</div>
-					</div>
-
-					<!-- Curso 14 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/unnelogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Programador Diseño Dinamico FrontEnd</h4>
-							<p><strong>Institución:</strong> Universidad Nacional del Nordeste</p>
-							<p><strong>Expedición:</strong> ago. 2023</p>
-						</div>
-					</div>
-
-					<!-- Curso 15 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/itmasterlogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Programador Web Full Stack</h4>
-							<p><strong>Institución:</strong> IT Masters (Charles Sturt University)</p>
-							<p><strong>Expedición:</strong> ago. 2023</p>
-						</div>
-					</div>
-
-					<!-- Curso 16 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/codoacodologo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Codo a Codo 4.0 - Full Stack Java</h4>
-							<p><strong>Institución:</strong> Agencia de Habilidades para el Futuro</p>
-							<p><strong>Expedición:</strong> jul. 2023</p>
-						</div>
-					</div>
-
-					<!-- Curso 17 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/unnelogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Programador Diseño Estatico FrontEnd</h4>
-							<p><strong>Institución:</strong> Universidad Nacional del Nordeste</p>
-							<p><strong>Expedición:</strong> jul. 2023</p>
-						</div>
-					</div>
-
-					<!-- Curso 18 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/utnlogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Desarrollador Java del trayecto formativo Programación / Testing</h4>
-							<p><strong>Institución:</strong> Universidad Tecnológica Nacional</p>
-							<p><strong>Expedición:</strong> abr. 2023</p>
-						</div>
-					</div>
-
-					<!-- Curso 19 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/secretariaecodelconocimiento.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>Formación en Datos e Inteligencia Artificial</h4>
-							<p><strong>Institución:</strong> Secretaría de Economía del Conocimiento</p>
-							<p><strong>Expedición:</strong> feb. 2023</p>
-						</div>
-					</div>
-
-					<!-- Curso 20 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/logointi.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4>#YoProgramo, Perfil Web Full Stack Junior</h4>
-			<small>&copy; <span id="currentYear"></span> Derechos reservados <strong>@sonygahan</strong></small>
-							<p><strong>Expedición:</strong> ago. 2022</p>
-						</div>
-					</div>
-
-					<!-- Curso 21 -->
-					<div class="curso-card">
-						<div class="curso-logo">
-							<img src="img/logocursos/mumukilogo.jpeg" alt="Logo Alura">
-						</div>
-						<div class="curso-info">
-							<h4># Se Programar Argentina Programa</h4>
-							<p><strong>Institución:</strong> INTI</p>
-							<p><strong>Expedición:</strong> oct. 2021</p>
+						<!-- Curso 4 -->
+						<div class="curso-card">
+							<div class="curso-logo">
+								<img src="img/logocursos/aluralogo.jpeg" alt="Logo UTN">
+							</div>
+							<div class="curso-info">
+								<h5>Desarrollo Personal</h5>
+								<p><strong>Institución:</strong> ONE Alura Latam</p>
+								<button class="btn-ver-mas" data-bs-toggle="collapse"
+									data-bs-target="#detallesCursoOtros4">Ver más</button>
+								<div id="detallesCursoOtros4" class="collapse">
+									<p><strong>Expedición:</strong> jun. 2024</p>
+									<p><strong>Descripción:</strong> Curso de Habilidades Blandas.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
