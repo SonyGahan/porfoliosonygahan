@@ -459,12 +459,64 @@ small {
     font-size: var(--font-size-h3);
 }
 
-/* Colores y estilos para cada badge */
-.skill-chart {
-    width: 100px !important;
-    height: 100px !important;
-    max-width: 100px;
-    max-height: 100px;
+.skills-grid {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 íconos por fila */
+    }
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 íconos por fila */
+    }
+}
+
+/* Pantallas grandes (monitores) */
+@media (min-width: 993px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 íconos por fila */
+    }
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card img {
+    width: 60px; /* Tamaño de los íconos */
+    height: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card img:hover {
+    transform: scale(1.1); /* Efecto de escala al hacer hover */
+}
+
+.skill-card span {
+    font-size: 0.9rem;
+    color: var(--quinary-color);
+    text-align: center;
 }
 
 
